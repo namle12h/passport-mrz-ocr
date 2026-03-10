@@ -24,7 +24,6 @@ app.add_middleware(
 ocr = PaddleOCR(
     lang="en",
     use_angle_cls=True,
-    show_log=False
 )
 
 os.makedirs("debug", exist_ok=True)
