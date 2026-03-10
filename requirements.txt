@@ -9,3 +9,4 @@ python-bidi==0.4.2
 setuptools
 wheel
 cython
+python-multipart
