@@ -1,3 +1,6 @@
+import os
+os.environ["PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK"] = "True"
+
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from paddleocr import PaddleOCR
@@ -227,3 +230,6 @@ async def scan_passport(file: UploadFile = File(...)):
         "message": "Scan thành công" if success else "Không đọc được MRZ"
     }
 
+@app.get("/")
+def home():
+    return {"status": "passport OCR API running"}
