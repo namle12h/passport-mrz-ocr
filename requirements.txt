@@ -1,6 +1,10 @@
 fastapi
 uvicorn
 paddleocr
-opencv-python
+opencv-python-headless
 numpy
-python-multipart
+Pillow
+python-bidi==0.4.2
+setuptools
+wheel
+cython
